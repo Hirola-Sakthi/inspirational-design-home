@@ -10525,6 +10525,12 @@
     gap: 30px;
     position: relative;
   }
+
+  @media (max-width: 480px) {
+  .experience__item {
+    gap: 10px;
+  }
+}
   .experience__item:after {
     content: "";
     width: 1px;
@@ -12049,6 +12055,14 @@
     line-height: 26px;
     color: #6A6A6A;
   }
+
+  @media (max-width: 480px) {
+  .contact-list__item-text a {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
   .contact-list__item-text a:hover {
     color: var(--rr-theme-primary);
   }
