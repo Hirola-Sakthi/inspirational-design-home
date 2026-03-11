@@ -44,7 +44,7 @@
 	border-radius: 100%;
 	display: inline-block;
 	-webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
-	animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+	animation: sk-three-bounce 0.8s ease-in-out infinite;
 }
 .sk-three-bounce.is-primary1.sk-three-bounce .sk-child { background-color: var(--rr-theme-primary1); }
 .preloader-close.is-primary1 { background: var(--rr-theme-primary1); }

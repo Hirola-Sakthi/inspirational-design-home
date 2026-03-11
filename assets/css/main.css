@@ -1065,7 +1065,7 @@
     z-index: 99999999;
     font-size: 26px;
     color: var(--rr-common-white);
-    background: #F44E19;
+    background: #2e82ad;
     width: 40px;
     height: 40px;
     line-height: 36px;
@@ -1101,7 +1101,7 @@
             transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-color: #F44E19;
+    background-color: #2e82ad;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
@@ -2384,6 +2384,10 @@
   .breadcrumb__menu ul li.active:after {
     display: none;
   }
+
+  .breadcrumb__menu ul li:last-child::after {
+  display: none;
+}
 
   /*----------------------------------------*/
   /*  2.10 backtotop
@@ -5962,7 +5966,7 @@
     font-family: var(--rr-ff-robo);
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 28px;
     color: var(--rr-common-white);
   }
@@ -9370,7 +9374,7 @@
     font-family: var(--rr-ff-exo);
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 25px;
     color: var(--rr-color-white);
     opacity: 1;
@@ -11089,7 +11093,7 @@
     text-overflow: ellipsis;
   }
   .what-we-do__item-img {
-    background-color: rgba(255, 122, 1, 0.1);
+    background-color: #e6f0f5;
     width: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13411,10 +13415,10 @@
     margin-top: 10px;
   }
 
-  .contact-map {
+  /* .contact-map {
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
-  }
+  } */
   .contact-map iframe {
     width: 100%;
   }
@@ -15097,6 +15101,61 @@
   }
 
 
+@media (max-width: 991px) {
+  .service-why {
+    padding: 60px 16px;
+  }
+
+  .service-why__title {
+    font-size: 28px;
+  }
+
+  .service-why__item {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-why {
+    padding: 50px 15px;
+  }
+
+  .service-why__title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .service-why__row {
+    margin-bottom: 20px;
+  }
+
+  .service-why__item {
+    margin-bottom: 16px; 
+  }
+
+  .service-why__item:last-child {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-why {
+    padding: 40px 12px;
+  }
+
+  .service-why__title {
+    font-size: 22px;
+  }
+
+  .service-why__item {
+    flex-direction: column;
+  }
+
+  .service-why__icon {
+    margin-bottom: 10px;
+  }
+}
+
 
 
   .works-section {
@@ -15243,7 +15302,7 @@
 }
 
 .stats-icon {
-  width: 55px;
+  width: 80px;
   height: 55px;
   background: rgba(46, 130, 173, 0.12);
   display: flex;
@@ -15388,4 +15447,103 @@
   .service-cap-header h2 {
     font-size: 30px;
   }
+}
+.service-icons{
+  height: 70px;
+  width: 80px;
+}
+
+.project-completed-icon{
+  height: 40px;
+  width: 40px;
+}
+
+.arrow-icons{
+height: 20px;
+width: 20px;
+}
+
+.cta-icons{
+height: 50px;
+width: 50px;
+}
+
+.contact-page-icons{
+  height: 80px;
+  width: 80px;
+}
+
+.about-why-choose-icon{
+  width: 40px;
+  height: 38px;
+}
+
+/* watsapp and call icon styles*/
+.btn-floating:hover img {
+  margin-bottom: -3px;
+}
+
+.btn-floating {
+  position: fixed;
+  left: 25px;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: 0;
+  z-index: 9999;
+  color: white;
+  transition: 0.2s;
+  margin-bottom: 30px;
+}
+
+.btn-floating:hover {
+  width: auto;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.btn-floating span {
+  font-size: 16px;
+  margin-left: 5px;
+  transition: 0.2s;
+  line-height: 0px;
+  display: none;
+}
+
+.btn-floating:hover span {
+  display: inline-block;
+}
+
+/* Phone */
+.btn-floating.phone {
+  bottom: 85px;
+  background-color: black;
+}
+
+.btn-floating.phone:hover {
+  background-color: black;
+}
+
+/* WhatsApp */
+.btn-floating.whatsapp {
+  background-color: #34af23;
+  bottom: 25px;
+}
+
+.btn-floating.whatsapp:hover {
+  background-color: #1f7a12;
+}
+
+
+@media(max-width:540px){
+  .btn-floating.whatsapp {
+  background-color: #34af23;
+  bottom: -20px;
+}
+.btn-floating.phone {
+  bottom: 35px;
+  background-color: black;
+}
+
 }
