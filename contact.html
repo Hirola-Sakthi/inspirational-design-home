@@ -416,15 +416,21 @@
 
                             <form id="contactForm" action="mail.php" method="POST" class="get-in-touch__form">
                                 <div class="row">
-                                    <div class="col-12">
+                                    
+                                    <div class="col-6">
                                         <div class="get-in-touch__form-input">
-                                            <input name="name" id="name" type="text" placeholder="full Name*">
+                                            <input name="name" id="name" type="text" placeholder="full Name*" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="get-in-touch__form-input">
+                                            <input name="email" id="email" type="email" placeholder="Email*">
                                         </div>
                                     </div>
 
                                     <div class="col-xl-6">
                                         <div class="get-in-touch__form-input">
-                                            <input name="email" id="email" type="email" placeholder="Email here*">
+                                            <input name="phone" id="phone" type="tel" placeholder="Contact Number*" required>
                                         </div>
                                     </div>
                                     <!-- <div class="col-xl-6">
@@ -438,14 +444,14 @@
                                 </div> -->
                                     <div class="col-xl-6">
                                         <div class="get-in-touch__form-input">
-                                            <input name="phone" id="phone" type="tel" placeholder="Phone Number here*">
+                                            <input name="plotSize" id="plotSize" type="text" placeholder="Plot Size*" required>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="get-in-touch__form-input">
                                             <div class="validation__wrapper-up position-relative">
-                                                <textarea name="message" id="textarea"
-                                                    placeholder="write Message*"></textarea>
+                                                <textarea name="plotLocation" id="plotLocation"
+                                                    placeholder="Plot Location*" required></textarea>
                                             </div>
                                         </div>
                                     </div>
